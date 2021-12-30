@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Domine', serif;
+    box-sizing: border-box;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+body{
+    background-color: #494e6b;
+}
+/*nav styles*/
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    overflow-x: hidden;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 300;
+    background-color: #192231;
+}
+
+nav .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list li{
+    list-style-type: none;
+    display: inline-block;
+}   
+
+nav ul li a{
+	color: #fff;
+	font-size: 17px;
+	font-weight: 600;
+    background-color: #192231;
+    margin-left: 25px;
+}
+nav ul li a:hover{
+    color: #985e6d;
+    transform: scale(1.1);
+    text-shadow:2px 3px 5px rgba(0,0,0,0.5);
+    transition: all 500ms ease-in-out;
+}
+.hamburger-btn{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+/*above the fold section (Home)*/
+.home h1{
+    text-align: center;
+    font-size: 70px;
+    color: #db9dae;
+    padding-top: 15%;
+    text-shadow:2px 3px 5px rgba(0,0,0,0.5);
+}
+.home{
+    display: flex;
+    color: #fff;
+    height: 90vh;
+}
+.home p{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 2%;
+    margin-bottom: 15px;
+}
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    padding: 20px 50px;
+    font-size: 15px;
+    position: relative;
+    color: #fff;
+    margin: 25px;
+    border: 3px solid #192231;
+    border-radius: 10px;
+}
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transition: all 500ms ease-in-out;
+    color: #985e6d;
+}
+/*about me section*/
+.about .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 55px;
+    margin-bottom: 40px;
+}
+.about .left-column{
+    width: 60%;
+}
+.about .right-column{
+    width: 40%;
+}
+.about .right-column img{
+    height: 400px;
+    width: 400px;
+}
+.about-content p, ul {
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+}
+.about-content li{
+    list-style-position: inside;
+    list-style-type: circle;
+}
+/*all h2 styles*/
+h2{
+    margin: 60px auto;
+    text-align: center;
+    font-size: 35px;
+    color: #db9dae;
+    text-shadow:2px 3px 5px rgba(0,0,0,0.5);
+}
+
+/*projects section*/
+.project-flex{
+    display: flex;
+    justify-content: center;
+    min-height: 70vh;
+    align-items: center;
+    width: 100%;
+}
+.project-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47%;
+    min-height: 100px;
+    padding: 10px;
+    margin-left: -140px;
+    background-color: #192231;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 3px solid #985e6d;
+}
+.project-image1, .project-image2, .project-image3{
+    width: 400px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.project-image1{
+    background-image: url("vietwithkelly.jpeg");
+}
+.project-image2{
+    background-image: url("portfolio.png");
+}
+.project-image3{
+    background-image: url("travelblog.jpg");
+}
+.projects p, ul{
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+    list-style-position: none;
+}
+.projects li{
+    display: inline;
+}
+.btn-container-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-2{
+    padding: 10px 30px;
+    font-size: 15px;
+    position: relative;
+    color: #fff;
+    margin: 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.btn-2:hover{
+    transform: scale(1.1);
+    box-shadow:2px 3px 5px rgba(0,0,0,0.5);
+    transition: all 500ms ease-in-out;
+    color: #fff;
+}
+
+/*contact me section*/
+
+.contact-section p{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 2%;
+    margin-bottom: 15px;
+}
+footer{
+    padding: 30px;
+    background-color: #192231;
+}
+
+/*scroll back to top function*/
+#btnScrollToTop{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background: #985e6d;
+	color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.25);
+	border: none;
+	cursor: pointer;
+}
+#btnScrollToTop:hover{
+	transform: scale(1.1);
+}
+
+/*smaller devices 768px or less*/
+@media screen and (max-width: 768px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .hamburger-btn{
+        display: block;
+        z-index: 999;
+    }
+    nav .nav-list.active{
+        left: 0;
+    }
+    nav .nav-list{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #192231;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    nav .nav-list li{
+        display: block;
+    }
+    nav .nav-list li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+	.home p, .contact-section p{
+        font-size: 17px;
+    }
+    .about .right-column{
+        padding-left: 0;
+    }
+    .home h1{
+        padding-top: 30%;
+        font-size: 65px;
+    }
+    .left-column, .right-column{
+        flex: 100%;
+        align-items: center;
+    }
+    .project-flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .project-image1, .project-image2, .project-image3{
+        width: 100%;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .project-text{
+        width:90%;
+        margin: 0;
+        margin-top: -85px;
+    }
+    footer{
+        padding: 32px;
+    }
+
+}
+
+
+
+
+
+
