@@ -66,6 +66,7 @@ nav ul li a:hover{
     display: flex;
     color: #fff;
     height: 90vh;
+    overflow: hidden;
 }
 .home p{
     text-align: center;
@@ -80,7 +81,7 @@ nav ul li a:hover{
     justify-content: center;
 }
 .btn{
-    padding: 20px 50px;
+    padding: 20px 40px;
     font-size: 15px;
     position: relative;
     color: #fff;
@@ -92,26 +93,16 @@ nav ul li a:hover{
     transform: scale(1.1);
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     transition: all 500ms ease-in-out;
-    color: #985e6d;
+    color: #db9dae;
 }
 /*about me section*/
-.about .about-content{
+.about-content{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 55px;
-    margin-bottom: 40px;
+    width: 100%;
 }
-.about .left-column{
-    width: 60%;
-}
-.about .right-column{
-    width: 40%;
-}
-.about .right-column img{
-    height: 400px;
-    width: 400px;
+.about-me-text{
+    flex-shrink: 0;
+    flex-basis: 60%;
 }
 .about-content p, ul {
     color: #fff;
@@ -121,6 +112,10 @@ nav ul li a:hover{
 .about-content li{
     list-style-position: inside;
     list-style-type: circle;
+}
+.image-column img{
+    width: 450px;
+    margin-left: 1rem;
 }
 /*all h2 styles*/
 h2{
@@ -145,13 +140,19 @@ h2:before, h2:after{
 h2:after{
     margin: 0 0 0 30px;
 }
+hr{
+    border: 0;
+    border-top: 2px solid #db9dae;
+    width: 30%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
 /*projects section*/
 .project-flex{
     display: flex;
     justify-content: center;
-    min-height: 70vh;
     align-items: center;
-    width: 100%;
+    margin: 3rem;
 }
 .project-text{
     display: flex;
@@ -278,22 +279,26 @@ footer{
 	.home p, .contact-section p{
         font-size: 17px;
     }
-    .about .right-column{
-        padding-left: 0;
+    .btn{
+        padding: 15px 30px;
     }
+   
     .home h1{
         padding-top: 30%;
-        font-size: 65px;
+        font-size: 60px;
     }
-    .left-column, .right-column{
-        flex: 100%;
-        align-items: center;
+    .about-content{
+        flex-direction: column;
+    }
+    .about-content img{
+        width: 100%;
+        margin-left: 0;
     }
     .project-flex{
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 20px 0;
+        margin: 4rem auto;
     }
     .project-image1, .project-image2, .project-image3{
         width: 100%;
