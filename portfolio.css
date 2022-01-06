@@ -81,19 +81,20 @@ nav ul li a:hover{
     justify-content: center;
 }
 .btn{
-    padding: 20px 40px;
+    padding: 17px 30px;
     font-size: 15px;
     position: relative;
     color: #fff;
     margin: 25px;
-    border: 3px solid #192231;
+    border: 3px solid #db9dae;
     border-radius: 10px;
 }
 .btn:hover{
-    transform: scale(1.1);
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    transition: all 500ms ease-in-out;
-    color: #db9dae;
+    color: #192231;
+    font-weight: 800;
+    background-color: #db9dae;
+    border: none;
 }
 /*about me section*/
 .about-content{
@@ -198,7 +199,7 @@ hr{
     justify-content: center;
 }
 .btn-2{
-    padding: 10px 30px;
+    padding: 10px 25px;
     font-size: 15px;
     position: relative;
     color: #fff;
@@ -280,7 +281,7 @@ footer{
         font-size: 17px;
     }
     .btn{
-        padding: 15px 30px;
+        padding: 13px 25px;
     }
    
     .home h1{
