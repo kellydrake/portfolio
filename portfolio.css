@@ -79,6 +79,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+	padding-bottom: 30px;
 }
 .btn{
     padding: 17px 30px;
@@ -146,7 +147,7 @@ hr{
     border-top: 2px solid #db9dae;
     width: 30%;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 /*projects section*/
 .project-flex{
