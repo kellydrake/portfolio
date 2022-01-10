@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #494e6b;
+    background-color: #3d415a;
 }
 /*nav styles*/
 .max-width{
@@ -43,7 +43,7 @@ nav ul li a{
     margin-left: 25px;
 }
 nav ul li a:hover{
-    color: #985e6d;
+    color: #A3D1FF;
     transform: scale(1.1);
     text-shadow:2px 3px 5px rgba(0,0,0,0.5);
     transition: all 500ms ease-in-out;
@@ -58,7 +58,7 @@ nav ul li a:hover{
 .home h1{
     text-align: center;
     font-size: 70px;
-    color: #db9dae;
+    color: #A3D1FF;
     padding-top: 15%;
     text-shadow:2px 3px 5px rgba(0,0,0,0.5);
 }
@@ -79,7 +79,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-	padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 .btn{
     padding: 17px 30px;
@@ -87,14 +87,13 @@ nav ul li a:hover{
     position: relative;
     color: #fff;
     margin: 25px;
-    border: 3px solid #db9dae;
+    border: 3px solid #A3D1FF;
     border-radius: 10px;
 }
 .btn:hover{
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     color: #192231;
     font-weight: 800;
-    background-color: #db9dae;
+    background-color: #A3D1FF;
     border: none;
 }
 /*about me section*/
@@ -124,7 +123,7 @@ h2{
     margin: 50px auto;
     text-align: center;
     font-size: 35px;
-    color: #db9dae;
+    color:#A3D1FF;
     text-shadow:2px 3px 5px rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
@@ -136,7 +135,7 @@ h2:before, h2:after{
 	border-top: 2px solid;
 	margin: 0 30px 0 0;
 	flex: 1 0 20px;
-	color: #db9dae;
+	color: #A3D1FF;
     padding-bottom: 5px;
 }
 h2:after{
@@ -144,7 +143,7 @@ h2:after{
 }
 hr{
     border: 0;
-    border-top: 2px solid #db9dae;
+    border-top: 2px solid #A3D1FF;
     width: 30%;
     margin: 0 auto;
     padding-bottom: 100px;
@@ -167,19 +166,25 @@ hr{
     background-color: #192231;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border: 3px solid #985e6d;
+    border: 3px solid #A3D1FF;
 }
-.project-image1, .project-image2, .project-image3{
+.project-image, .project-image1, .project-image2, .project-image3{
     width: 400px;
     height: 350px;
     border-radius: 15px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
+.project-image{
+    background-image: url("phx_dal_project.PNG");
+    background-size: cover;
+}
 .project-image1{
-    background-image: url("vietwithkelly.jpeg");
+    background-image: url("vietwithkelly2.PNG");
+    background-size: cover;
 }
 .project-image2{
-    background-image: url("portfolio.png");
+    background-image: url("portfolio3.jpg");
+    background-repeat: no-repeat;
 }
 .project-image3{
     background-image: url("travelblog.jpg");
@@ -205,7 +210,7 @@ hr{
     position: relative;
     color: #fff;
     margin: 10px;
-    border: 2px solid #fff;
+    border: 2px solid #A3D1FF;
     border-radius: 10px;
 }
 .btn-2:hover{
@@ -237,8 +242,8 @@ footer{
 	height: 40px;
 	width: 40px;
 	border-radius: 50%;
-	background: #985e6d;
-	color: #fff;
+	background: #A3D1FF;
+	color: #192231;
 	box-shadow: 0 0 10px rgba(0,0,0,0.25);
 	border: none;
 	cursor: pointer;
