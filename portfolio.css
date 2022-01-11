@@ -6,7 +6,9 @@
     line-height: 1.4;
     text-decoration: none;
 }
-
+html{
+    scroll-padding-top: 4rem;
+}
 body{
     background-color: #3d415a;
 }
@@ -20,7 +22,7 @@ body{
 nav{
     position: fixed;
     width: 100%;
-    padding: 10px 0;
+    padding: 2px 0;
     z-index: 300;
     background-color: #192231;
 }
@@ -57,9 +59,9 @@ nav ul li a:hover{
 /*above the fold section (Home)*/
 .home h1{
     text-align: center;
-    font-size: 70px;
+    font-size: 4.375rem;
     color: #A3D1FF;
-    padding-top: 15%;
+    padding-top: 11rem;
     text-shadow:2px 3px 5px rgba(0,0,0,0.5);
 }
 .home{
@@ -79,7 +81,8 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
 }
 .btn{
     padding: 17px 30px;
@@ -100,6 +103,7 @@ nav ul li a:hover{
 .about-content{
     display: flex;
     width: 100%;
+    margin-top: 5rem;
 }
 .about-me-text{
     flex-shrink: 0;
@@ -141,13 +145,7 @@ h2:before, h2:after{
 h2:after{
     margin: 0 0 0 30px;
 }
-hr{
-    border: 0;
-    border-top: 2px solid #A3D1FF;
-    width: 30%;
-    margin: 0 auto;
-    padding-bottom: 100px;
-}
+
 /*projects section*/
 .project-flex{
     display: flex;
@@ -291,7 +289,7 @@ footer{
     }
    
     .home h1{
-        padding-top: 30%;
+        padding-top: 12rem;
         font-size: 60px;
     }
     .about-content{
