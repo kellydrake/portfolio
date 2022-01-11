@@ -305,7 +305,7 @@ footer{
         width: 100%;
         margin: 4rem auto;
     }
-    .project-image1, .project-image2, .project-image3{
+    .project-image, .project-image1, .project-image2, .project-image3{
         width: 100%;
         height: 300px;
         background-repeat: no-repeat;
