@@ -85,43 +85,55 @@ nav ul li a:hover{
     padding-bottom: 3rem;
 }
 .btn{
-    padding: 17px 30px;
+    padding: 18px 32px;
     font-size: 15px;
     position: relative;
-    color: #fff;
     margin: 25px;
-    border: 3px solid #A3D1FF;
+    border: 2px solid #A3D1FF;
+    transition: all 500ms;
+    border-radius: 15px;
+    color: #fff;
+    overflow: hidden;
+}
+.btn:before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    background-color: #A3D1FF;
+    z-index: -1;
+    transition: all 500ms;
     border-radius: 10px;
 }
 .btn:hover{
     color: #192231;
     font-weight: 800;
-    background-color: #A3D1FF;
-    border: none;
+}
+.btn:hover:before{
+    top: 0;
+    left: 0;
 }
 /*about me section*/
-.about-content{
+.about-content-container{
     display: flex;
-    width: 100%;
-    margin-top: 5rem;
+    align-items: center;
 }
-.about-me-text{
-    flex-shrink: 0;
-    flex-basis: 60%;
+.about-me-text, .image-column img{
+    flex: 1;
+    margin-top: 4rem;
 }
-.about-content p, ul {
+.about-me-text p, ul {
     color: #fff;
     font-size: 17px;
     text-align: center;
 }
-.about-content li{
+.about-me-text li{
     list-style-position: inside;
     list-style-type: circle;
 }
-.image-column img{
-    width: 450px;
-    margin-left: 1rem;
-}
+
 /*all h2 styles*/
 h2{
     margin: 50px auto;
@@ -147,7 +159,7 @@ h2:after{
 }
 
 /*projects section*/
-.project-flex{
+.project{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,8 +167,6 @@ h2:after{
 }
 .project-text{
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 47%;
     min-height: 100px;
     padding: 10px;
@@ -164,28 +174,13 @@ h2:after{
     background-color: #192231;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border: 3px solid #A3D1FF;
 }
 .project-image, .project-image1, .project-image2, .project-image3{
-    width: 400px;
-    height: 350px;
+    width: 500px;
     border-radius: 15px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
-.project-image{
-    background-image: url("phx_dal_project.PNG");
     background-size: cover;
-}
-.project-image1{
-    background-image: url("vietwithkelly2.PNG");
-    background-size: cover;
-}
-.project-image2{
-    background-image: url("portfolio3.jpg");
-    background-repeat: no-repeat;
-}
-.project-image3{
-    background-image: url("travelblog.jpg");
+    border: 3px solid #192231;
 }
 .projects p, ul{
     color: #fff;
@@ -228,7 +223,7 @@ h2:after{
     margin-bottom: 15px;
 }
 footer{
-    padding: 30px;
+    padding: 20px;
     background-color: #192231;
 }
 
@@ -285,42 +280,36 @@ footer{
         font-size: 17px;
     }
     .btn{
-        padding: 13px 25px;
+        padding: 15px 30px;
     }
    
     .home h1{
         padding-top: 12rem;
         font-size: 60px;
     }
-    .about-content{
+    .about-content-container{
         flex-direction: column;
     }
-    .about-content img{
-        width: 100%;
-        margin-left: 0;
-    }
-    .project-flex{
+   
+    .project{
         display: flex;
         flex-direction: column;
         width: 100%;
         margin: 4rem auto;
     }
-    .project-image, .project-image1, .project-image2, .project-image3{
-        width: 100%;
-        height: 300px;
-        background-size: cover;
-    }
+  
     .project-text{
         width:90%;
         margin: 0;
         margin-top: -85px;
     }
-    footer{
-        padding: 32px;
-    }
 
 }
-
+@media screen and (min-width: 769px) and (max-width: 1025px){
+    .about-content-container{
+        flex-direction: column;
+    }
+}
 
 
 
