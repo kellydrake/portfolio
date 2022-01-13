@@ -164,6 +164,7 @@ h2:after{
     justify-content: center;
     align-items: center;
     margin: 3rem;
+    padding: 17px 0;
 }
 .project-text{
     display: flex;
@@ -245,8 +246,9 @@ footer{
 	transform: scale(1.1);
 }
 
-/*smaller devices 768px or less*/
-@media screen and (max-width: 768px){
+/*smaller devices*/
+
+@media screen and (max-width: 806px){
     .max-width{
         padding: 0 50px;
     }
@@ -290,12 +292,14 @@ footer{
     .about-content-container{
         flex-direction: column;
     }
-   
+    .about-me-text, .image-column img{
+        margin-top: 5rem;
+    }
     .project{
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 4rem auto;
+        margin: 6rem auto;
     }
   
     .project-text{
@@ -303,15 +307,14 @@ footer{
         margin: 0;
         margin-top: -85px;
     }
-
+    .project-image, .project-image1, .project-image2, .project-image3{
+        width: 100%;
+    }
 }
-@media screen and (min-width: 769px) and (max-width: 1025px){
+@media screen and (min-width: 807px) and (max-width: 1025px){
     .about-content-container{
         flex-direction: column;
     }
 }
-
-
-
 
 
