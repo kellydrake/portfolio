@@ -15,7 +15,7 @@ body{
 /*nav styles*/
 .max-width{
     max-width: 1300px;
-    padding: 0 80px;
+    padding: 0 50px;
     margin: auto;
     overflow-x: hidden;
 }
@@ -23,7 +23,7 @@ nav{
     position: fixed;
     width: 100%;
     padding: 2px 0;
-    z-index: 300;
+    z-index: 1;
     background-color: #192231;
 }
 
@@ -121,7 +121,6 @@ nav ul li a:hover{
     align-items: center;
 }
 .about-me-text, .image-column img{
-    flex: 1;
     margin-top: 4rem;
 }
 .about-me-text p, ul {
@@ -168,7 +167,7 @@ h2:after{
 }
 .project-text{
     display: flex;
-    width: 47%;
+    width: 48%;
     min-height: 100px;
     padding: 10px;
     margin-left: -140px;
@@ -249,12 +248,10 @@ footer{
 /*smaller devices*/
 
 @media screen and (max-width: 806px){
-    .max-width{
-        padding: 0 50px;
-    }
+  
     .hamburger-btn{
         display: block;
-        z-index: 999;
+        z-index: 1;
     }
     nav .nav-list.open{
         left: 0;
@@ -293,12 +290,11 @@ footer{
         flex-direction: column;
     }
     .about-me-text, .image-column img{
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
     .project{
         display: flex;
         flex-direction: column;
-        width: 100%;
         margin: 6rem auto;
     }
   
