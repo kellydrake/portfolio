@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="kelly drake, front end developer portfolio">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'none'">
     <link rel="stylesheet" href="portfolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,8 +27,8 @@
                 <li><a href="#connect">Contact</a></li>
                 <li><a href="https://drive.google.com/file/d/1dufvFwza56uSN9m2yZrV7mhMcY4W8KEb/view?usp=sharing">Resume</a></li>
             </ul>
-                <div class="hamburger-btn">
-                <i class="fas fa-bars" aria-label="hamburger menu"></i>
+                <div class="hamburger-btn" aria-label="open the menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
                 </div>
             </div>
         </nav>
@@ -141,7 +142,7 @@
                                     <li>SEO</li>
                                 </ul>
                             <div class="btn-container-2">
-                            <a href="https://wanderingbluebonnets.com/" class="btn-2" target="_blank">Visit the site</a>
+                            <a href="https://wanderingbluebonnets.com/" class="btn-2" target="_blank" rel="noopener">Visit the site</a>
                             </div>
                         </div>
                     </div>
