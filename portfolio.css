@@ -62,7 +62,6 @@ nav ul li a:hover{
     margin: 5px auto;
 }
 
-
 /*above the fold section (Home)*/
 .home h1{
     text-align: center;
@@ -142,7 +141,7 @@ nav ul li a:hover{
 
 /*all h2 styles*/
 h2{
-    margin: 50px auto;
+    margin: 40px auto;
     text-align: center;
     font-size: 35px;
     color:#A3D1FF;
@@ -279,7 +278,7 @@ footer{
     }
     nav ul li a{
         font-size: 1.5rem;
-	margin-left: 0;
+        margin-left: 0;
     }
     .nav-list.active{
         left: 0;
@@ -304,6 +303,9 @@ footer{
         padding-top: 12rem;
         font-size: 60px;
     }
+    h2:before, h2:after{
+        display: none;
+    }
     .about-content-container{
         flex-direction: column;
     }
@@ -315,7 +317,7 @@ footer{
         flex-direction: column;
         margin: 6rem auto;
     }
-  
+   
     .project-text{
         width:90%;
         margin: 0;
