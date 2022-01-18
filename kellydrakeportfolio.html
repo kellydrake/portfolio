@@ -4,36 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="kelly drake, front end developer portfolio">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'none'">
     <link rel="stylesheet" href="portfolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <script src="portfolio.js"></script>
     <title>Kelly Drake</title>
 </head>
 <body>
 <header>
     <!--navbar-->
-        <nav>
+        <nav class="navbar">
             <div class="max-width">
             <img src="logo1.webp" class="logo" alt="kelly drake portfolio logo">
             <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#connect">Contact</a></li>
-                <li><a href="https://drive.google.com/file/d/1dufvFwza56uSN9m2yZrV7mhMcY4W8KEb/view?usp=sharing">Resume</a></li>
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about-me">About</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#connect">Contact</a></li>
+                <li><a class="nav-link" href="https://drive.google.com/file/d/1dufvFwza56uSN9m2yZrV7mhMcY4W8KEb/view?usp=sharing">Resume</a></li>
             </ul>
-                <div class="hamburger-btn" aria-label="open the menu">
-                <i class="fas fa-bars" aria-hidden="true"></i>
-                </div>
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             </div>
         </nav>
 </header>
-<!---Home section - above the fold-->
+<!---Homepage hero - above the fold-->
 
     <section class="home" id="home">
         <div class="max-width">
@@ -162,7 +161,7 @@
 
 <!--scroll back to top icon-->
 
-<button id="btnScrollToTop" aria-label="scroll to top">
+<button onclick="scrollToTop()" id="btnScrollToTop" aria-label="scroll to top">
     <i class="fas fa-chevron-up"></i>
 </button>
 

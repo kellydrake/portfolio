@@ -1,20 +1,23 @@
-// toggle hamburger menu icon with jQuery
-$('.hamburger-btn, .nav-list li a').click(function(){
-    $('.nav-list').toggleClass("open");
-});
+// toggle hamburger menu icon
+const hamburger = document.querySelector(".hamburger");
+const navList = document.querySelector(".nav-list");
+const navLink = document.querySelectorAll(".nav-list li a");
 
+hamburger.addEventListener("click", mobileMenu);
+navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-//scroll to top button fade in and out when at top
-$(window).scroll(function(){
-    if ($(this).scrollTop() > 100) {
-        $('#btnScrollToTop').fadeIn();
-    } else {
-        $('#btnScrollToTop').fadeOut();
-    }
-});
+function mobileMenu(){
+    hamburger.classList.toggle("active");
+    navList.classList.toggle("active");
+}
+
+function closeMenu(){
+    hamburger.classList.remove("active");
+    navList.classList.remove("active");
+}
+
 
 //Click event to scroll to top button
-$('#btnScrollToTop').click(function(){
-    $('html, body').animate({scrollTop : 0},800);
-    return false;
-});
+function scrollToTop(){
+    window.scroll({top: 0, left: 0, behavior: 'smooth'});
+}
