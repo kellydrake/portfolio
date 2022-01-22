@@ -119,6 +119,7 @@ nav ul li a:hover{
 .about-me-text, .image-column img{
     margin-top: 4rem;
 }
+
 .about-me-text p, ul {
     color: #fff;
     font-size: 17px;
@@ -288,7 +289,9 @@ footer{
     .btn{
         padding: 15px 30px;
     }
-   
+   .home{
+       height: 100vh;
+   }
     .home h1{
         padding-top: 12rem;
         font-size: 60px;
@@ -299,13 +302,13 @@ footer{
     .about-content-container{
         flex-direction: column;
     }
-    .about-me-text, .image-column img{
-        margin-top: 3rem;
+    .image-column img{
+        width: 100%;
     }
     .project{
         display: flex;
         flex-direction: column;
-        margin: 6rem auto;
+        margin: 2rem 0;
     }
    
     .project-text{
