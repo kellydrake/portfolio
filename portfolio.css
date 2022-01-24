@@ -18,7 +18,7 @@ body{
     align-items: center;
 }
 .max-width{
-    max-width: 1300px;
+    max-width: 1500px;
     padding: 0 50px;
     margin: auto;
     overflow-x: hidden;
@@ -43,7 +43,7 @@ nav .max-width{
 
 nav ul li a{
 	color: #fff;
-	font-size: 17px;
+	font-size: 1rem;
 	font-weight: 600;
     background-color: #192231;
     margin-left: 25px;
@@ -67,62 +67,71 @@ nav ul li a:hover{
 }
 
 /*above the fold section (Home)*/
+
 .home h1{
     text-align: center;
     font-size: 4.375rem;
     color: #A3D1FF;
-    padding-top: 11rem;
-    text-shadow:2px 3px 5px rgba(0,0,0,0.5);
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+    margin-top: 4rem;
 }
 .home{
     display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
-    height: 90vh;
     overflow: hidden;
+    min-height: 100vh;
 }
-.home p{
+.home-content p{
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #fff;
-    margin-top: 2%;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 .btn-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding: 30px;
 }
 .btn{
+    background-color: transparent;
     padding: 18px 32px;
-    font-size: 15px;
-    position: relative;
-    margin: 25px;
     border: 2px solid #A3D1FF;
     transition: all 500ms;
     border-radius: 15px;
-    color: #fff;
     overflow: hidden;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
 }
 .btn:hover{
     color: #192231;
-    font-weight: 800;
     background-color: #A3D1FF;
+    font-weight: 900;
 }
 
 /*about me section*/
 .about-content-container{
     display: flex;
     align-items: center;
+    margin: 2.5rem 0;
 }
-.about-me-text, .image-column img{
-    margin-top: 4rem;
+.about-me-text{
+    margin-right: 3rem;
 }
-
+h3{
+    text-align: center;
+    color: #A3D1FF;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-shadow:2px 3px 5px rgba(0,0,0,0.5);
+}
 .about-me-text p, ul {
     color: #fff;
-    font-size: 17px;
+    font-size: 1.063rem;
     text-align: center;
 }
 .about-me-text li{
@@ -134,7 +143,7 @@ nav ul li a:hover{
 h2{
     margin: 40px auto;
     text-align: center;
-    font-size: 35px;
+    font-size: 2.188rem;
     color:#A3D1FF;
     text-shadow:2px 3px 5px rgba(0,0,0,0.5);
     display: flex;
@@ -144,10 +153,9 @@ h2{
 }
 h2:before, h2:after{
     content: '';
-	border-top: 2px solid;
+	border-top: 2px solid #A3D1FF;
 	margin: 0 30px 0 0;
 	flex: 1 0 20px;
-	color: #A3D1FF;
     padding-bottom: 5px;
 }
 h2:after{
@@ -171,6 +179,7 @@ h2:after{
     background-color: #192231;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
 }
 .project-image, .project-image1, .project-image2, .project-image3{
     width: 500px;
@@ -179,42 +188,35 @@ h2:after{
     background-size: cover;
     border: 3px solid #192231;
 }
-.projects p, ul{
+.project p, ul{
     color: #fff;
     padding: 10px;
     text-align: center;
-    font-size: 17px;
+    font-size: 1.063rem;
     list-style-position: none;
 }
 .projects li{
     display: inline;
 }
 .btn-container-2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.btn-2{
+    background-color: #192231;
     padding: 10px 25px;
-    font-size: 15px;
-    position: relative;
-    color: #fff;
+    font-size: .938rem;
     margin: 10px;
     border: 2px solid #A3D1FF;
-    border-radius: 10px;
-}
-.btn-2:hover{
-    transform: scale(1.1);
-    box-shadow:2px 3px 5px rgba(0,0,0,0.5);
-    transition: all 500ms ease-in-out;
     color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
 }
-
+.btn-container-2:hover{
+    transform: scale(1.1);
+    transition: all 500ms ease-in-out;
+}
 /*contact me section*/
 
 .contact-section p{
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #fff;
     margin-top: 2%;
     margin-bottom: 15px;
@@ -259,16 +261,16 @@ footer{
         position: fixed;
         left: -100%;
         height: 100%;
-        top: 2.275rem;
+        top: 2.275em;
         width: 100%;
         background: #192231;
         transition: all 0.3s ease;
         display: flex;
         flex-direction: column;
-        gap: 3.5rem;
+        gap: 3.5em;
     }
     nav ul li a{
-        font-size: 1.5rem;
+        font-size: 1.3em;
         margin-left: 0;
     }
     .nav-list.active{
@@ -283,8 +285,11 @@ footer{
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-	.home p, .contact-section p{
-        font-size: 17px;
+    .home h1{
+        font-size: 4rem;
+    }
+	.home-content p, .contact-section p{
+        font-size: 1.063em;
     }
     .btn{
         padding: 15px 30px;
@@ -292,15 +297,14 @@ footer{
    .home{
        height: 100vh;
    }
-    .home h1{
-        padding-top: 12rem;
-        font-size: 60px;
-    }
     h2:before, h2:after{
         display: none;
     }
     .about-content-container{
         flex-direction: column;
+    }
+    .about-me-text{
+        margin-right: 0;
     }
     .image-column img{
         width: 100%;
@@ -308,7 +312,7 @@ footer{
     .project{
         display: flex;
         flex-direction: column;
-        margin: 2rem 0;
+        margin: 2em 0;
     }
    
     .project-text{
