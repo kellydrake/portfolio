@@ -17,7 +17,20 @@ function closeMenu(){
 }
 
 
-//Click event to scroll to top button
-function scrollToTop(){
-    window.scroll({top: 0, left: 0, behavior: 'smooth'});
-}
+//fade-in top animation
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        } else{
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+
+
+
