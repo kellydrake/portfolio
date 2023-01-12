@@ -271,6 +271,7 @@ footer{
     .nav-list.active{
         left: 0;
         text-align: center;
+	padding-left: 0;
     }
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
